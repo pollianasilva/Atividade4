@@ -1,0 +1,92 @@
+/* style.css */
+
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    color: #0056b3;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: #0056b3; /* Define a cor do texto das legendas */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Adiciona um leve sombreamento para melhorar a legibilidade */
+}
+
+
+/* Navbar */
+.nav-link:hover {
+    text-decoration: none; /* Adiciona sublinhado ao passar o mouse */
+    color: darkblue !important; /* Altera a cor no hover */
+}
+
+/* Estilo do Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    background-color: #007bff; /* Cor de fundo do footer */
+    color: white; /* Cor do texto no footer */
+    padding: 1rem; /* Adiciona espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+footer a {
+    color: white; /* Cor padrão dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: color 0.3s ease; /* Suaviza a transição da cor */
+}
+
+footer a:hover {
+    color: darkblue !important; /* Muda a cor do link ao passar o mouse */
+}
+
+/* Hover para os ícones das redes sociais */
+.social-icon {
+    font-size: 24px; /* Tamanho do ícone */
+    transition: color 0.3s ease; /* Suaviza a transição da cor */
+}
+
+.social-icon:hover {
+    color: darkblue !important; /* Muda a cor do ícone ao passar o mouse */
+}
+
+/* Cards da Seção "Serviços" */
+#servicos .card {
+    margin: 10px 0;
+}
+
+/* Seção de Testemunhos */
+#testemunhos {
+    background-color: #f8f9fa; /* Cor de fundo para a seção de testemunhos */
+}
+
+/* Estilos para a seção de Contato */
+#contato {
+    background-color: #f8f9fa; /* Cor de fundo para a seção de contato */
+}
+
+/* Estilo do formulário de contato */
+#form-contato .form-control {
+    border-radius: 0.5rem; /* Bordas arredondadas para os campos do formulário */
+}
+
+/* Estilo do botão de envio */
+#form-contato button {
+    border-radius: 0.5rem; /* Bordas arredondadas para o botão */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-direction: column; /* Alinha ícones verticalmente em telas pequenas */
+    }
+}

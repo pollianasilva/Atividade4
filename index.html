@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/viking_tux_icon.br.png" type="image/x-icon">
+    <title>KiddyZone - Aprendizado Divertido</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1><h1><img src="assets/img/viking_tux_icon.br.png" width="50" height="50" alt="pinguin viking"> KiddyZone</h1></h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#testemunhos">Testemunhos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <div id="banner" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/pexels-goumbik.jpg" class="d-block w-100" alt="Crianças Brincando no Pula Pula">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Aprenda Brincando!</h5>
+                    <p>Explore nossas atividades educativas.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/pexels-kasuma.jpg" class="d-block w-100" alt="Crianças Brincando no Mar">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Atividades Interativas!</h5>
+                    <p>Divirta-se enquanto aprende.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/pexels-king.jpg" class="d-block w-100" alt="Crianças brincando na Rua">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Crescendo Juntos!</h5>
+                    <p>Um ambiente seguro e divertido.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Sobre Nós</h2>
+            <p class="text-center">KiddyZone é um espaço dedicado ao aprendizado divertido, onde as crianças podem explorar, aprender e crescer através de atividades interativas e educativas.</p>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Nossos Serviços</h2>
+            <div class="row" id="servicos-lista">
+                <!-- Serviços serão carregados aqui via API -->
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Atividades Educativas</h5>
+                            <p class="card-text">Oferecemos uma variedade de atividades que promovem o aprendizado divertido e interativo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Os outros serviços serão carregados aqui pela API -->
+            </div>
+        </div>
+    </section>
+
+    <section id="testemunhos" class="py-5">
+        <div class="container">
+            <h2 class="text-center">O que nossos clientes dizem</h2>
+            <p>Leia as experiências, os testemunhos abaixo são preenchidos automaticamente a partir da nossa API, fornecendo um olhar honesto e autêntico sobre como podemos ajudar.</p>
+            <div class="row" id="testemunhos-lista">
+                <!-- Depoimentos serão carregados aqui via API -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Entre em Contato</h2>
+            <p>Tem perguntas ou gostaria de saber mais sobre nossos serviços? Preencha o formulário abaixo e nossa equipe entrará em contato com você. Suas informações serão enviadas para nossa API para um atendimento mais eficiente.</p>
+            <form id="form-contato">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <div class="social-icons my-3">
+                <a href="#" class="text-white me-3 social-icon" title="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="text-white me-3 social-icon" title="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="text-white social-icon" title="Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+            <p class="mb-0">&copy; 2024 KiddyZone. Todos os direitos reservados.</p>
+            <div class="footer-links mt-2">
+                <a href="#" class="text-white">Termos de Uso</a> | 
+                <a href="#" class="text-white">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
